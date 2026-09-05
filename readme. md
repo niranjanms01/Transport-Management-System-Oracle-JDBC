@@ -1,0 +1,64 @@
+# Transport Management System -- Oracle JDBC
+
+A Java Swing-based Transport Management System developed using **Java, JDBC, and Oracle Database**. The project demonstrates database design, Oracle connectivity, and CRUD (Create, Read, Update, Delete) operations through a graphical user interface.
+
+---
+
+## 📌 Project Overview
+
+The **Transport Management System** is a DBMS application designed to manage transport-related information such as:
+
+- Vehicles
+- Drivers
+- Routes
+- Customers
+- Bookings
+- Payments
+
+---
+
+## ✨ Features
+
+- 🚗 Vehicle Management
+- ➕ Create vehicle records
+- 📖 Read and view records
+- ✏️ Update existing records
+- 🗑️ Delete records
+- 🔗 Oracle Database connectivity using JDBC
+- 🗄️ Relational database design with primary and foreign keys
+- 🖥️ Java Swing-based graphical user interface
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| **Java** | Application development |
+| **Java Swing** | Graphical user interface |
+| **JDBC** | Java-to-Oracle connectivity |
+| **Oracle Database XE 21c** | Backend database |
+| **Apache NetBeans** | Development environment |
+| **Docker** | Running Oracle Database locally |
+
+---
+
+## 🗄️ Database Design
+
+The database contains the following tables:
+
+- `VEHICLES`
+- `DRIVERS`
+- `ROUTES`
+- `CUSTOMERS`
+- `BOOKINGS`
+- `PAYMENTS`
+
+### Relationships
+
+```text
+CUSTOMERS ───────┐
+                 │
+VEHICLES ────────┼──> BOOKINGS ───> PAYMENTS
+                 │
+ROUTES ──────────┘
